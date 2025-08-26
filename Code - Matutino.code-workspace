@@ -1,8 +1,16 @@
-{
-	"folders": [
-		{
-			"path": "../Documents/Code - Matutino"
-		}
-	],
-	"settings": {}
-}
+def evaluate_grade(grade):
+    if grade == 10:
+        return "Parabéns, nota máxima!"
+    elif 9 <= grade <= 9.9:
+        return "Quase perfeito!"
+    elif 0 <= grade <= 4.9:
+        return "Reprovado com baixa nota."
+    else:
+        return "Nota fora das condições especificadas."
+
+if __name__ == "__main__":
+    # Exemplo de uso
+    print(evaluate_grade(10))
+    print(evaluate_grade(9.5))
+    print(evaluate_grade(4.0))
+    print(evaluate_grade(7.0))
